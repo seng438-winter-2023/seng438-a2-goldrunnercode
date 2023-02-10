@@ -38,6 +38,23 @@ getLowerBoundUnequalTest() -  ensures that when 2 numbers are not equal, the cor
 getLowerBoundEqualTest() -  this test checks if the functions returns the correct value when the bounds are equal
 
 getLowerBoundNegativeTest() - The negative test has a lower bound that is negative and ensures the value returned is the same negative value
+Testing getUpperBound - tests outlined in partition 1
+
+All test functions are the same as getLowerBounds.
+
+Testing getLength - tests outlined in partition 1
+
+getLengthUnequalTes() - ensures that when 2 numbers are not equal, the correct length is returned
+
+getLengthEqualTest() - This test checks if the functions returns the correct length when the bounds are equal
+
+
+getLengthNegativeTest() - this test ensures that when the distance between the 2 boundaries is negative, the function returns a positive length
+Testing getCentralValue() :
+correctCentralValue(): Test checks with a correct central value for the range
+equalCentralValue(): Test checks with a range that has the same upper and lower bound.
+Testing toString():
+toStringUpperAndLower(): Checks if the correct string is generated and shows thelower and upper bound in the test.
 
 DataUtilites
 calculateColumnTotal and calculateRowTotal the following tests were made that cover the following partitions
@@ -66,6 +83,12 @@ createNumberArray2DCorrectNumberLength(): This test checks that the function cre
 createNumberArray2DNullArray(): This test checks that throws an InvalidParameterException when given a null argument.
 
 createNumberArrayNullValuesinArray2D(): This test checks that the function throws an InvalidParameterException when given an empty double 2D array.
+
+Testing getCumulativePercentages() – Partition 4
+
+getCumulativePercentageCorrect(): This test checks if the function creates an KeyedValues output with the correct values.
+
+getCumulativePercentageNullValue(): This test checks that the function throws an InvalidParameterException when given a null argument.
 
 # 4 How the team work/effort was divided and managed
 We divided the methods of each class based on how many test cases we thought we were going to have in our orignal plan, we thought there were going to be 20 test cases for the 5 methods we chose from the Range class, these test cases were about half of the work so we decided two of our team members would take this on Abdullah and Jack. Then for the data utilites class we thought that the first two methods would take 10 test cases so we decided one person Evan would work on those and the last three classes required 10 test cases so we decided one person would work on those Max.
