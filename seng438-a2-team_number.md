@@ -26,7 +26,13 @@ Partition 4
 How we are going to test the getCumulativePercentages class is first we are going to input a correct KeyedValues object and test for the output. Then we are going to test for a null value in the KeyedValues which should throw an error. Then we are going to test using an incorrect object which should throw a InvalidParameterException. We can also test for what happens when you throw a empty KeyedValues Object in which should also throw an error. 
 
 
+Short discussion about Mocking:
 
+The pros of mocking is that it is really easy to see all of the possible calls that can be made to a small object and set them all as expected outputs, but with large objects where you might need to set hundreds of values mocking would be very tedious to set each get for those hundreds of values. 
+
+So I would say the pros of Mocking is if you are trying to mock small objects for testing than it is highly efficient and easy to use.
+
+If you are trying it for larger objects than it is super tedious and not very user friendly
 
 
 # 3 Test cases developed
