@@ -23,7 +23,7 @@ public class testCalculateRowTotal extends DataUtilities {
 	     final Values2D values = mockingContext.mock(Values2D.class);
 	     mockingContext.checking(new Expectations() {
 	         {
-	             one(values).getRowCount();
+	             one(values).getColumnCount();
 	             will(returnValue(2));
 	             one(values).getValue(0, 0);
 	             will(returnValue(7.5));
@@ -40,7 +40,7 @@ public class testCalculateRowTotal extends DataUtilities {
 	     final Values2D values = mockingContext.mock(Values2D.class);
 	     mockingContext.checking(new Expectations() {
 	         {
-	             one(values).getRowCount();
+	             one(values).getColumnCount();
 	             will(returnValue(2));
 	             one(values).getValue(0, 0);
 	             will(returnValue(7.5));
@@ -58,7 +58,7 @@ public class testCalculateRowTotal extends DataUtilities {
 	     final Values2D values = mockingContext.mock(Values2D.class);
 	     mockingContext.checking(new Expectations() { 
 	         {
-	             one(values).getRowCount();
+	             one(values).getColumnCount();
 	             will(returnValue(2));
 	             one(values).getValue(0, 0);
 	             will(returnValue(null));
@@ -66,7 +66,7 @@ public class testCalculateRowTotal extends DataUtilities {
 	             will(returnValue(2.5));
 	         }
 	     });
-	     double result = DataUtilities.calculateColumnTotal(values, 0);// calculate for the correct row
+	     double result = DataUtilities.calculateRowTotal(values, 0);// calculate for the correct row
 	     assertEquals(0, result, .000000001d);//should output 0 as null is an incorrect value
 	}
 	@Test
